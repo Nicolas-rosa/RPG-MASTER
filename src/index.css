@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   background-color: #0f172a;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+nav a {
+    position: relative;
+    padding: 5px 10px; /* Corrigido para '10px' */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: yellow; /* Linha de destaque */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Efeito de hover */
+}
+
+h1 {
+    font-family: 'Cinzel', serif; /* Fonte medieval */
+}
+
