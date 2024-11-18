@@ -36,7 +36,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/Criar" className="hover:text-yellow-400 transition duration-200 ease-in-out flex items-center">
-                                <i className="fas fa-scroll mr-2"></i> Criar
+                                <i className="fas fa-scroll mr-2"></i> Create
                             </Link>
                         </li>
                         <li>
