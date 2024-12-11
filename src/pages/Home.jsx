@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MoreInformation from '../components/information';
+
 
 const Button = ({ to, children, ...rest }) => {
     const Component = to ? Link : 'button';
@@ -37,6 +39,8 @@ const Home = () => {
 
 
             <Button to="/Info">Begin Your Journey</Button>
+
+<MoreInformation/>
         </main>
     );
 };

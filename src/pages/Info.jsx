@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import Inforaces from "../components/informationraces";
 const Detail = ({ item, onClose, dataType }) => {
     return (
         <div className="bg-gray-800 p-4 rounded-md shadow-md absolute top-0 left-0 w-full z-10">
@@ -140,6 +140,7 @@ const Info = () => {
                     </li>
                 ))}
             </ul>
+            <Inforaces/>
         </div>
     );
 };
